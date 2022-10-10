@@ -22,3 +22,6 @@ I am practicing JS by doing these projects
 
 ❤[Basic Counter](https://js-basic-counter-project.netlify.app/)
 
+❤[Dark Mode](https://js-dark-mode-project.netlify.app/)
+
+
