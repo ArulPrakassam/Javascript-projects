@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPA & CGPA CALCULATOR</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 class="heading">GPA & CGPA CALCULATOR FOR PONDICHERRY UNIVERSITY</h1>
+    <section class="calculator">
+      <!-- grade points section -->
+      <div class="grade-points">
+        <table class="grade-points-table">
+          <thead class="grade-points-table-head">
+            <tr>
+              <td class="grade-points-data">range of total marks</td>
+              <td class="grade-points-data">grade</td>
+              <td class="grade-points-data">grade points</td>
+            </tr>
+          </thead>
+          <tbody class="grade-points-table-body">
+            <tr>
+              <td class="grade-points-data">90 to 100</td>
+              <td class="grade-points-data">S</td>
+              <td class="grade-points-data">10</td>
+            </tr>
+            <tr>
+              <td class="grade-points-data">80 to 89</td>
+              <td class="grade-points-data">A</td>
+              <td class="grade-points-data">9</td>
+            </tr>
+            <tr>
+              <td class="grade-points-data">70 to 79</td>
+              <td class="grade-points-data">B</td>
+              <td class="grade-points-data">8</td>
+            </tr>
+            <tr>
+              <td class="grade-points-data">60 to 69</td>
+              <td class="grade-points-data">C</td>
+              <td class="grade-points-data">7</td>
+            </tr>
+            <tr>
+              <td class="grade-points-data">55 to 59</td>
+              <td class="grade-points-data">D</td>
+              <td class="grade-points-data">6</td>
+            </tr>
+            <tr>
+              <td class="grade-points-data">50 to 54</td>
+              <td class="grade-points-data">E</td>
+              <td class="grade-points-data">5</td>
+            </tr>
+            <tr>
+              <td class="grade-points-data">0 to 49</td>
+              <td class="grade-points-data">F</td>
+              <td class="grade-points-data">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- grade points section end -->
+
+      <!-- main container -->
+      <div class="container">
+        <table>
+          <thead>
+            <tr class="row-header">
+              <td>subjects</td>
+              <td>credit hour</td>
+              <td>grade</td>
+            </tr>
+          </thead>
+          <!-- main area -->
+          <tbody class="table-body-one">
+            <tr class="main-area">
+              <td class="input-text">
+                <input type="text" placeholder="(optional)" />
+              </td>
+              <td class="input-credit">
+                <input
+                  class="credit-data"
+                  placeholder="credit hour"
+                  type="text"
+                  maxlength="1"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
+              </td>
+              <td class="select-grade">
+                <select name="grade" id="grade">
+                  <option value="-">-</option>
+                  <option value="S">S</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="main-area">
+              <td class="input-text">
+                <input type="text" placeholder="(optional)" />
+              </td>
+              <td class="input-credit">
+                <input
+                  type="text"
+                  placeholder="credit hour"
+                  class="credit-data"
+                  maxlength="1"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
+              </td>
+              <td class="select-grade">
+                <select name="grade" id="grade">
+                  <option value="-">-</option>
+                  <option value="S">S</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="main-area">
+              <td class="input-text">
+                <input type="text" placeholder="(optional)" />
+              </td>
+              <td class="input-credit">
+                <input
+                  type="text"
+                  placeholder="credit hour"
+                  class="credit-data"
+                  maxlength="1"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
+              </td>
+              <td class="select-grade">
+                <select name="grade" id="grade">
+                  <option value="-">-</option>
+                  <option value="S">S</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="main-area">
+              <td class="input-text">
+                <input type="text" placeholder="(optional)" />
+              </td>
+              <td class="input-credit">
+                <input
+                  type="text"
+                  placeholder="credit hour"
+                  class="credit-data"
+                  maxlength="1"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
+              </td>
+              <td class="select-grade">
+                <select name="grade" id="grade">
+                  <option value="-">-</option>
+                  <option value="S">S</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="main-area">
+              <td class="input-text">
+                <input type="text" placeholder="(optional)" />
+              </td>
+              <td class="input-credit">
+                <input
+                  type="text"
+                  placeholder="credit hour"
+                  class="credit-data"
+                  maxlength="1"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
+              </td>
+              <td class="select-grade">
+                <select name="grade" id="grade">
+                  <option value="-">-</option>
+                  <option value="S">S</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="main-area">
+              <td class="input-text">
+                <input type="text" placeholder="(optional)" />
+              </td>
+              <td class="input-credit">
+                <input
+                  type="text"
+                  placeholder="credit hour"
+                  class="credit-data"
+                  maxlength="1"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
+              </td>
+              <td class="select-grade">
+                <select name="grade" id="grade">
+                  <option value="-">-</option>
+                  <option value="S">S</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="main-area">
+              <td class="input-text">
+                <input type="text" placeholder="(optional)" />
+              </td>
+              <td class="input-credit">
+                <input
+                  type="text"
+                  placeholder="credit hour"
+                  class="credit-data"
+                  maxlength="1"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
+              </td>
+              <td class="select-grade">
+                <select name="grade" id="grade">
+                  <option value="-">-</option>
+                  <option value="S">S</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="main-area">
+              <td class="input-text">
+                <input type="text" placeholder="(optional)" />
+              </td>
+              <td class="input-credit">
+                <input
+                  type="text"
+                  placeholder="credit hour"
+                  class="credit-data"
+                  maxlength="1"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
+              </td>
+              <td class="select-grade">
+                <select name="grade" id="grade">
+                  <option value="-">-</option>
+                  <option value="S">S</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="main-area">
+              <td class="input-text">
+                <input type="text" placeholder="(optional)" />
+              </td>
+              <td class="input-credit">
+                <input
+                  type="text"
+                  placeholder="credit hour"
+                  class="credit-data"
+                  maxlength="1"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
+              </td>
+              <td class="select-grade">
+                <select name="grade" id="grade">
+                  <option value="-">-</option>
+                  <option value="S">S</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- main container end -->
+      <div class="add-more">
+        <button class="add-more-btn">Add more</button>
+      </div>
+      <div class="submit">
+        <button type="submit" class="submit-btn">Calculate</button>
+      </div>
+      <div class="answer-value hidden">
+        <h1>Grade Point: <span class="answer-value-content"></span></h1>
+        <h1>In Percentage: <span class="answer-value-percent"></span></h1>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

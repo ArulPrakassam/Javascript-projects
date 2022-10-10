@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #d8e7f1;
+}
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin: 1rem;
+  line-height: 1.2;
+  letter-spacing: 0.2rem;
+  font-family: "Roboto", sans-serif;
+  color: #32a4f0;
+}
+/* grade points section  */
+.grade-points {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1rem 0;
+  margin: 1rem auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 80vw;
+  max-width: 400px;
+  background-color: #a2d2ff;
+}
+
+.grade-points-table-head tr {
+  font-weight: 700;
+}
+.grade-points-data {
+  padding: 10px;
+}
+
+/* grade points section end */
+
+/* main container start */
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  padding-top: 2rem;
+}
+
+.row-header {
+  font-weight: 700;
+}
+.main-area td {
+  padding: 5px;
+}
+input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 100px;
+}
+select {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100px;
+  border: 1px solid black;
+}
+option {
+  font-size: 1rem;
+}
+
+/* main container end */
+
+.add-more,
+.submit {
+  margin: 2rem;
+  text-align: center;
+}
+.add-more-btn,
+.submit-btn {
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #32a4f0;
+  color: white;
+}
+.add-more-btn:hover {
+  background-color: #82c7f5;
+  box-shadow: 2px 4px 2px #aaaaaa;
+}
+.add-more-btn:active,
+.submit-btn:active {
+  transform: translateY(3px);
+}
+.submit-btn {
+  font-size: 1.5rem;
+  padding: 10px;
+  background-color: rgb(47, 255, 168);
+  color: black;
+}
+.submit-btn:hover {
+  background-color: rgb(161, 255, 216);
+  box-shadow: 2px 4px 2px #aaaaaa;
+}
+.answer-value {
+  text-align: center;
+
+  margin: 2rem;
+}
+.answer-value h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 2px;
+  color: black;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+.answer-value-content,
+.answer-value-percent {
+  color: #0b9eff;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+@media screen and (min-width: 800px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .answer-value h1 {
+    font-size: 2rem;
+  }
+}

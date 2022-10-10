@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Math Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <h1>Mini Math Calculator</h1>
+      <section class="calculator">
+        <!-- container one -->
+        <div class="container-one">
+          <input type="text" class="input" autofocus />
+          <button class="backspace" value="backspace">
+            <i class="fa-solid fa-delete-left"></i>
+          </button>
+        </div>
+        <!-- container two -->
+        <div class="container-two">
+          <!-- rows -->
+          <div class="row1">
+            <button class="red clear" value="C">C</button>
+            <button class="green bracket" value="(">(</button>
+            <button class="green bracket" value=")">)</button>
+            <button class="green divide" value="&divide;">&divide;</button>
+          </div>
+          <!-- rows -->
+          <div class="row2">
+            <button class="seven" value="7">7</button>
+            <button class="eight" value="8">8</button>
+            <button class="nine" value="9">9</button>
+            <button class="green multiply" value="x">x</button>
+          </div>
+          <!-- rows -->
+          <div class="row3">
+            <button class="four" value="4">4</button>
+            <button class="five" value="5">5</button>
+            <button class="six" value="6">6</button>
+            <button class="green subtract" value="-">-</button>
+          </div>
+          <!-- rows -->
+          <div class="row4">
+            <button class="one" value="1">1</button>
+            <button class="two" value="2">2</button>
+            <button class="three" value="3">3</button>
+            <button class="green add" value="+">+</button>
+          </div>
+          <!-- rows -->
+          <div class="row5">
+            <button class="bracket-minus" value="+/-">+/-</button>
+            <button class="zero" value="0">0</button>
+            <button class="point" value=".">.</button>
+            <button class="equal-to black" value="=">=</button>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-container">
+          Copyright &copy;<span class="year"></span>. Designed and developed by
+          Arul Prakassam
+        </div>
+      </footer>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
