@@ -10,6 +10,8 @@ I am practicing JS by doing these projects
 
 ⭐[Mini Math Calculator](https://mini-math-calculator.netlify.app/)
 
+⭐[Age Calculator](https://age-calculator-project.netlify.app/)
+
 ## Using OOPS
 
 📌[Multiple Counter using OOPS](https://js-counter-object-project.netlify.app/)
@@ -23,5 +25,8 @@ I am practicing JS by doing these projects
 ❤[Basic Counter](https://js-basic-counter-project.netlify.app/)
 
 ❤[Dark Mode](https://js-dark-mode-project.netlify.app/)
+
+❤[FAQ](https://js-faq-project.netlify.app/)
+
 
 
