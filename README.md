@@ -12,11 +12,19 @@ I am practicing JS by doing these projects
 
 ⭐[Age Calculator](https://age-calculator-project.netlify.app/)
 
+⭐[Timer Download](https://js-timer-download-project.netlify.app/)
+
+
 ## Using OOPS
 
 📌[Multiple Counter using OOPS](https://js-counter-object-project.netlify.app/)
 
 📌[Gallery Project using OOPS](https://js-gallery-object-project.netlify.app/)
+
+## Using AJAX
+
+✨[Dad Jokes](https://js-dad-jokes-project.netlify.app/)
+
 
 ## Using Normal JS
 
@@ -27,6 +35,26 @@ I am practicing JS by doing these projects
 ❤[Dark Mode](https://js-dark-mode-project.netlify.app/)
 
 ❤[FAQ](https://js-faq-project.netlify.app/)
+
+❤[Filter Project](https://filter-project.netlify.app/)
+
+❤[Filter search project](https://filter-search-project.netlify.app/)
+
+❤[Modal Project](https://js-modal-project.netlify.app/)
+
+❤[Navbar](https://js-navbar-project.netlify.app/)
+
+❤[Numbers](https://js-numbers-project.netlify.app/)
+
+❤[Reviews Project](https://js-reviews-project.netlify.app/)
+
+❤[Scroll Project](https://js-scroll-project.netlify.app/)
+
+❤[Side navbar](https://js-side-navbar.netlify.app/)
+
+❤[Tabs Project](https://js-tabs-project.netlify.app/)
+
+❤[Video Project](https://js-video-project.netlify.app/)
 
 
 
