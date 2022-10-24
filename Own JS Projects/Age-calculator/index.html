@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <section>
+      <div class="calculator">
+        <h1>Age Calculator</h1>
+        <div class="result"></div>
+        <table>
+          <tbody>
+            <tr>
+              <td class="text">Date of Birth</td>
+              <td>
+                <select name="user-date" id="user-date"></select>
+              </td>
+              <td>
+                <select name="user-month" id="user-month">
+                  <option value="Jan">Jan</option>
+                  <option value="Feb">Feb</option>
+                  <option value="Mar">Mar</option>
+                  <option value="Apr">Apr</option>
+                  <option value="May">May</option>
+                  <option value="Jun">Jun</option>
+                  <option value="July">July</option>
+                  <option value="Aug">Aug</option>
+                  <option value="Sep">Sep</option>
+                  <option value="Oct">Oct</option>
+                  <option value="Nov">Nov</option>
+                  <option value="Dec">Dec</option>
+                </select>
+              </td>
+              <td>
+                <input
+                  name="user-year"
+                  type="text"
+                  maxlength="4"
+                  id="user-year"
+                  value="2002"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="text">Age at the date of</td>
+              <td>
+                <select name="date" id="date"></select>
+              </td>
+              <td>
+                <select name="month" id="month">
+                  <option value="Jan">Jan</option>
+                  <option value="Feb">Feb</option>
+                  <option value="Mar">Mar</option>
+                  <option value="Apr">Apr</option>
+                  <option value="May">May</option>
+                  <option value="Jun">Jun</option>
+                  <option value="July">July</option>
+                  <option value="Aug">Aug</option>
+                  <option value="Sep">Sep</option>
+                  <option value="Oct">Oct</option>
+                  <option value="Nov">Nov</option>
+                  <option value="Dec">Dec</option>
+                </select>
+              </td>
+              <td>
+                <input
+                  name="year"
+                  type="text"
+                  maxlength="4"
+                  id="year"
+                  value="2002"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <button class="button">Calculate</button>
+      </div>
+    </section>
+    <footer class="footer-container">
+      Copyright &copy;<span class="year"></span>. Designed and developed by Arul
+      Prakassam
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
