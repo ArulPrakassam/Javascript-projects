@@ -77,7 +77,9 @@ userYear.addEventListener("change", (e) => {
       (e.currentTarget.value % 4 == 0 && e.currentTarget.value % 100 != 0) ||
       e.currentTarget.value % 400 == 0
     ) {
-      userDate.add(new Option(`29`, "29"));
+      if (userDate.lastChild.value != "29") {
+        userDate.add(new Option(`29`, "29"));
+      }
     } else {
       userDate.lastChild.remove();
       if (userDate.lastChild.value != "28") {
@@ -131,7 +133,9 @@ year.addEventListener("change", (e) => {
       (e.currentTarget.value % 4 == 0 && e.currentTarget.value % 100 != 0) ||
       e.currentTarget.value % 400 == 0
     ) {
-      date.add(new Option(`29`, "29"));
+      if (date.lastChild.value != "29") {
+        date.add(new Option(`29`, "29"));
+      }
     } else {
       date.lastChild.remove();
       if (date.lastChild.value != "28") {
