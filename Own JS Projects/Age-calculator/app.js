@@ -80,6 +80,9 @@ userYear.addEventListener("change", (e) => {
       userDate.add(new Option(`29`, "29"));
     } else {
       userDate.lastChild.remove();
+      if (userDate.lastChild.value != "28") {
+        userDate.add(new Option(`28`, "28"));
+      }
     }
   }
 });
@@ -131,6 +134,9 @@ year.addEventListener("change", (e) => {
       date.add(new Option(`29`, "29"));
     } else {
       date.lastChild.remove();
+      if (date.lastChild.value != "28") {
+        date.add(new Option(`28`, "28"));
+      }
     }
   }
 });
