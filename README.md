@@ -6,6 +6,8 @@ I am practicing JS by doing these projects
 
 ## Own JS Projects
 
+⭐[Wikipedia Search](https://wikipedia-search-engine-project.netlify.app/)
+
 ⭐[GPA CGPA Calculator](https://gpa-cgpa-calculator-project.netlify.app/)
 
 ⭐[Mini Math Calculator](https://mini-math-calculator.netlify.app/)
@@ -13,7 +15,6 @@ I am practicing JS by doing these projects
 ⭐[Age Calculator](https://age-calculator-project.netlify.app/)
 
 ⭐[Timer Download](https://js-timer-download-project.netlify.app/)
-
 
 ## Using OOPS
 
@@ -25,6 +26,7 @@ I am practicing JS by doing these projects
 
 ✨[Dad Jokes](https://js-dad-jokes-project.netlify.app/)
 
+✨[Display Products](https://js-products.netlify.app/)
 
 ## Using Normal JS
 
@@ -55,6 +57,3 @@ I am practicing JS by doing these projects
 ❤[Tabs Project](https://js-tabs-project.netlify.app/)
 
 ❤[Video Project](https://js-video-project.netlify.app/)
-
-
-
