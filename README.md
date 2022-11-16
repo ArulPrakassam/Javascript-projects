@@ -6,6 +6,8 @@ I am practicing JS by doing these projects
 
 ## Own JS Projects
 
+⭐[Blogger Sitemap](https://blogger-sitemap.netlify.app/)
+
 ⭐[Wikipedia Search](https://wikipedia-search-engine-project.netlify.app/)
 
 ⭐[GPA CGPA Calculator](https://gpa-cgpa-calculator-project.netlify.app/)
