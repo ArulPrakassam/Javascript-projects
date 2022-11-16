@@ -156,3 +156,8 @@ submit.addEventListener("click", function () {
     }
   }
 });
+
+//for year
+
+const year = document.querySelector(".year");
+year.innerHTML = new Date().getFullYear();
