@@ -49,10 +49,11 @@ In arrange function, we use value for storing **title and url** and result which
 We traverse each item and add the label to the result as key and value as title and url. If the label is already present means then **add the previous value of the key with the current value**
 
 Finally the result is passed **to the displayContent function**.
+
 In this function, the result object is changed to array and stored in newResult.
 **Key and value pairs are stored as array**. Value is **an array**. So traversing the newResult and storing the key in **key variable** and again traversing the value.
 
-**Fetching title, url and put it in <li></li> by traversing the value.** The li is stored in list variable and after traversing one item, the **article html format** returned to the variable of **finalResult**.
+**Fetching title, url and put it in li by traversing the value.** The li is stored in list variable and after traversing one item, the **article html format** returned to the variable of **finalResult**.
 
 After traversing all things. The finalResult is added to the container.
 
