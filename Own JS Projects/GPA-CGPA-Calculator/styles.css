@@ -10,6 +10,10 @@
 body {
   background-color: #d8e7f1;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 .heading {
   text-align: center;
   font-size: 2rem;

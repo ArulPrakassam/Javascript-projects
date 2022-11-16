@@ -147,7 +147,8 @@ submit.addEventListener("click", function () {
         ".answer-value-percent"
       );
       answerValue.innerText = +(sum / sumCredits).toFixed(2);
-      answerValuePercent.innerText = answerValue.textContent * 10 + "%";
+      answerValuePercent.innerText =
+        (answerValue.textContent * 10).toFixed(2) + "%";
     }
     //if the user press submit with no values in all places means this will show alert
     else {
