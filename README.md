@@ -14,6 +14,8 @@ I am practicing JS by doing these projects
 
 ⭐[Age Calculator](https://age-calculator-project.netlify.app/)
 
+⭐[Blogger Sitemap](https://www.switch2knowledge.com/p/site-map.html)
+
 ⭐[Timer Download](https://js-timer-download-project.netlify.app/)
 
 ## Using OOPS
