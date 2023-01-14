@@ -1,10 +1,12 @@
 //adding more rows
 const addMoreBtn = document.querySelector(".add-more-btn");
+const removeBtn = document.querySelector(".remove-btn");
 const tableBodyOne = document.querySelector(".table-body-one");
+const clearBtn = document.querySelector(".clear-btn");
 addMoreBtn.addEventListener("click", function () {
   const html = `<tr class="main-area">
       <td class="input-text">
-        <input type="text"placeholder="(optional)" />
+        <input type="text" class="subjects" placeholder="(optional)" />
       </td>
       <td class="input-credit">
         <input
@@ -30,7 +32,7 @@ addMoreBtn.addEventListener("click", function () {
     </tr>
     <tr class="main-area">
               <td class="input-text">
-                <input type="text" placeholder="(optional)" />
+                <input type="text" class="subjects" placeholder="(optional)" />
               </td>
               <td class="input-credit">
                 <input
@@ -56,7 +58,7 @@ addMoreBtn.addEventListener("click", function () {
             </tr>
             <tr class="main-area">
               <td class="input-text">
-                <input type="text" placeholder="(optional)" />
+                <input type="text" class="subjects" placeholder="(optional)" />
               </td>
               <td class="input-credit">
                 <input
@@ -83,7 +85,77 @@ addMoreBtn.addEventListener("click", function () {
     `;
   //   tableBodyTwo.innerHTML += html;
   tableBodyOne.insertAdjacentHTML("beforeend", html);
+  sessionShowing(tableBodyOne.innerHTML);
+  sessionSaving();
 });
+
+removeBtn.addEventListener("click", () => {
+  if (tableBodyOne.lastElementChild) {
+    tableBodyOne.removeChild(tableBodyOne.lastElementChild);
+    let removeIndex =
+      Array.prototype.indexOf.call(
+        tableBodyOne.children,
+        tableBodyOne.lastElementChild
+      ) + 1;
+    sessionStorage.removeItem(`input ${removeIndex}`);
+    sessionStorage.removeItem(`grade ${removeIndex}`);
+    sessionStorage.removeItem(`subject ${removeIndex}`);
+    sessionShowing(tableBodyOne.innerHTML);
+  }
+});
+
+//saving to sessionStorage
+function sessionSaving() {
+  document.querySelectorAll(".credit-data").forEach((input, index) => {
+    input.addEventListener("input", () => {
+      sessionStorage.setItem(`input ${index}`, input.value);
+    });
+  });
+
+  document.querySelectorAll("#grade").forEach((grade, index) => {
+    grade.addEventListener("input", () => {
+      sessionStorage.setItem(`grade ${index}`, grade.value);
+    });
+  });
+
+  document.querySelectorAll(".subjects").forEach((subject, index) => {
+    subject.addEventListener("input", () => {
+      sessionStorage.setItem(`subject ${index}`, subject.value);
+    });
+  });
+}
+
+// showing the sessionStorage data in display screen
+function sessionShowing(preHTML) {
+  if (preHTML != undefined) {
+    sessionStorage.setItem(`preHTML`, preHTML);
+  }
+  window.addEventListener("load", () => {
+    let previousHTML = sessionStorage.getItem(`preHTML`);
+    if (previousHTML != undefined) {
+      tableBodyOne.innerHTML = previousHTML;
+    }
+    document.querySelectorAll(".credit-data").forEach((input, index) => {
+      if (sessionStorage.getItem(`input ${index}`)) {
+        input.value = sessionStorage.getItem(`input ${index}`);
+      }
+    });
+
+    document.querySelectorAll("#grade").forEach((grade, index) => {
+      if (sessionStorage.getItem(`grade ${index}`)) {
+        grade.value = sessionStorage.getItem(`grade ${index}`);
+      }
+    });
+    document.querySelectorAll(".subjects").forEach((subject, index) => {
+      if (sessionStorage.getItem(`subject ${index}`)) {
+        subject.value = sessionStorage.getItem(`subject ${index}`);
+      }
+    });
+    sessionSaving();
+  });
+}
+
+sessionShowing();
 
 //calculation
 const submit = document.querySelector(".submit-btn");
@@ -157,7 +229,22 @@ submit.addEventListener("click", function () {
   }
 });
 
-//for year
+//to clear all data in the inputs and also from the sessionStorage
+clearBtn.addEventListener("click", () => {
+  sessionStorage.clear();
+  document.querySelectorAll(".credit-data").forEach((input) => {
+    input.value = "";
+  });
 
+  document.querySelectorAll("#grade").forEach((grade) => {
+    grade.value = "-";
+  });
+
+  document.querySelectorAll(".subjects").forEach((subject) => {
+    subject.value = "";
+  });
+});
+
+//for year
 const year = document.querySelector(".year");
 year.innerHTML = new Date().getFullYear();
