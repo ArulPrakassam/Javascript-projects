@@ -1,8 +1,9 @@
-//adding more rows
 const addMoreBtn = document.querySelector(".add-more-btn");
 const removeBtn = document.querySelector(".remove-btn");
 const tableBodyOne = document.querySelector(".table-body-one");
 const clearBtn = document.querySelector(".clear-btn");
+
+//adding more rows
 addMoreBtn.addEventListener("click", function () {
   const html = `<tr class="main-area">
       <td class="input-text">
