@@ -98,58 +98,58 @@ removeBtn.addEventListener("click", () => {
         tableBodyOne.children,
         tableBodyOne.lastElementChild
       ) + 1;
-    sessionStorage.removeItem(`input ${removeIndex}`);
-    sessionStorage.removeItem(`grade ${removeIndex}`);
-    sessionStorage.removeItem(`subject ${removeIndex}`);
+    localStorage.removeItem(`input ${removeIndex}`);
+    localStorage.removeItem(`grade ${removeIndex}`);
+    localStorage.removeItem(`subject ${removeIndex}`);
     sessionShowing(tableBodyOne.innerHTML);
   }
 });
 
-//saving to sessionStorage
+//saving to localStorage
 function sessionSaving() {
   document.querySelectorAll(".credit-data").forEach((input, index) => {
     input.addEventListener("input", () => {
-      sessionStorage.setItem(`input ${index}`, input.value);
+      localStorage.setItem(`input ${index}`, input.value);
     });
   });
 
   document.querySelectorAll("#grade").forEach((grade, index) => {
     grade.addEventListener("input", () => {
-      sessionStorage.setItem(`grade ${index}`, grade.value);
+      localStorage.setItem(`grade ${index}`, grade.value);
     });
   });
 
   document.querySelectorAll(".subjects").forEach((subject, index) => {
     subject.addEventListener("input", () => {
-      sessionStorage.setItem(`subject ${index}`, subject.value);
+      localStorage.setItem(`subject ${index}`, subject.value);
     });
   });
 }
 
-// showing the sessionStorage data in display screen
+// showing the localStorage data in display screen
 function sessionShowing(preHTML) {
   if (preHTML != undefined) {
-    sessionStorage.setItem(`preHTML`, preHTML);
+    localStorage.setItem(`preHTML`, preHTML);
   }
   window.addEventListener("load", () => {
-    let previousHTML = sessionStorage.getItem(`preHTML`);
+    let previousHTML = localStorage.getItem(`preHTML`);
     if (previousHTML != undefined) {
       tableBodyOne.innerHTML = previousHTML;
     }
     document.querySelectorAll(".credit-data").forEach((input, index) => {
-      if (sessionStorage.getItem(`input ${index}`)) {
-        input.value = sessionStorage.getItem(`input ${index}`);
+      if (localStorage.getItem(`input ${index}`)) {
+        input.value = localStorage.getItem(`input ${index}`);
       }
     });
 
     document.querySelectorAll("#grade").forEach((grade, index) => {
-      if (sessionStorage.getItem(`grade ${index}`)) {
-        grade.value = sessionStorage.getItem(`grade ${index}`);
+      if (localStorage.getItem(`grade ${index}`)) {
+        grade.value = localStorage.getItem(`grade ${index}`);
       }
     });
     document.querySelectorAll(".subjects").forEach((subject, index) => {
-      if (sessionStorage.getItem(`subject ${index}`)) {
-        subject.value = sessionStorage.getItem(`subject ${index}`);
+      if (localStorage.getItem(`subject ${index}`)) {
+        subject.value = localStorage.getItem(`subject ${index}`);
       }
     });
     sessionSaving();
@@ -230,9 +230,9 @@ submit.addEventListener("click", function () {
   }
 });
 
-//to clear all data in the inputs and also from the sessionStorage
+//to clear all data in the inputs and also from the localStorage
 clearBtn.addEventListener("click", () => {
-  sessionStorage.clear();
+  localStorage.clear();
   document.querySelectorAll(".credit-data").forEach((input) => {
     input.value = "";
   });
