@@ -59,3 +59,11 @@ I am practicing JS by doing these projects
 ❤[Tabs Project](https://js-tabs-project.netlify.app/)
 
 ❤[Video Project](https://js-video-project.netlify.app/)
+
+❤[Countdown timer Project](https://js-countdown-timer-project.netlify.app/)
+
+❤[Grocery Bud Project](https://js-grocerybud-project.netlify.app/)
+
+❤[Lorem Ipsum generator](https://js-lorem-ipsum-project.netlify.app/)
+
+❤[Basic Slider](https://js-basic-slider-project.netlify.app/)
