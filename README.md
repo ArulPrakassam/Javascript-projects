@@ -6,6 +6,10 @@ I am practicing JS by doing these projects
 
 ## Own JS Projects
 
+⭐[Gallery Search App](https://imagegallery-search-app.netlify.app/)
+
+⭐[Bookmyshow Clone](https://bookmyshow-clone-project.netlify.app/)
+
 ⭐[Wikipedia Search](https://wikipedia-search-engine-project.netlify.app/)
 
 ⭐[GPA CGPA Calculator](https://gpa-cgpa-calculator-project.netlify.app/)
