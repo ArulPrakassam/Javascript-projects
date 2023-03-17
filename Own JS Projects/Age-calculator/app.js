@@ -189,7 +189,7 @@ button.addEventListener("click", () => {
   //function 1
 
   //used to calculate the days and months upto next year coming from the dob
-  const function1 = function (monthOfBirth) {
+  const function1 = (monthOfBirth) => {
     tempTotalMonth = monthOfBirth;
     while (tempTotalMonth < 12) {
       tempTotalMonth++;
@@ -205,7 +205,7 @@ button.addEventListener("click", () => {
 
   //function 2
 
-  const function2 = function () {
+  const function2 = () => {
     //first while loop is used to calculate the days and months and years from jan 1, birth year + 1 to
     //jan 1, current year
     while (yearOfBirth != currentYear) {
@@ -263,7 +263,7 @@ button.addEventListener("click", () => {
 
   //function 3
 
-  const function3 = function () {
+  const function3 = () => {
     //calculating remaining days in the date of birth month
     if (
       (yearOfBirth % 4 == 0 && yearOfBirth % 100 != 0) ||
@@ -278,7 +278,9 @@ button.addEventListener("click", () => {
 
     //if current month and date of month are same means then only days will be calculated
     if (currentMonth == monthOfBirth) {
-      result.innerHTML = `<h2>Your Age is </h2><span class="color">${totalMonth}</span> months <span class="color">${days}</span> days`;
+      result.innerHTML = `<h2>Your Age is </h2><span class="color">${totalMonth}</span> months <span class="color">${
+        currentDate - dateOfBirth
+      }</span> days`;
     } else {
       var tempMonthOfBirth = monthOfBirth;
       tempMonthOfBirth++;
