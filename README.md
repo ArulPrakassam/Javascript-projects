@@ -34,6 +34,8 @@ I am practicing JS by doing these projects
 
 ✨[Display Products](https://js-products.netlify.app/)
 
+✨[Random User](https://js-random-user.netlify.app/)
+
 ## Using Normal JS
 
 ❤[Color Flipper](https://js-color-flipper-project.netlify.app/)
