@@ -21,4 +21,8 @@ const fetchData = async () => {
 
   projectContainer.innerHTML = displayData;
 };
+
+const year = document.getElementById("year");
+year.textContent = new Date().getFullYear();
+
 fetchData();
