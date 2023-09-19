@@ -219,9 +219,9 @@ submit.addEventListener("click", function () {
       const answerValuePercent = document.querySelector(
         ".answer-value-percent"
       );
-      answerValue.innerText = +(sum / sumCredits).toFixed(2);
+      answerValue.innerText += (sum / sumCredits).toFixed(2);
       answerValuePercent.innerText =
-        (answerValue.textContent * 10).toFixed(2) + "%";
+        ((answerValue.textContent - 0.5) * 10).toFixed(2) + "%";
     }
     //if the user press submit with no values in all places means this will show alert
     else {
