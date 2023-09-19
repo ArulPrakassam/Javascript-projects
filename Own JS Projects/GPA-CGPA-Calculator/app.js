@@ -219,7 +219,7 @@ submit.addEventListener("click", function () {
       const answerValuePercent = document.querySelector(
         ".answer-value-percent"
       );
-      answerValue.innerText += (sum / sumCredits).toFixed(2);
+      answerValue.innerText = (sum / sumCredits).toFixed(2);
       answerValuePercent.innerText =
         ((answerValue.textContent - 0.5) * 10).toFixed(2) + "%";
     }
