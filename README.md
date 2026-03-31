@@ -6,7 +6,7 @@ I am practicing JS by doing these projects
 
 ## Own JS Projects
 
-⭐[Gallery Search App](https://imagegallery-search-app.netlify.app/)
+⭐[Gallery Search App](https://gallerysearch.netlify.app/)
 
 ⭐[Bookmyshow Clone](https://bookmyshow-clone-project.netlify.app/)
 
